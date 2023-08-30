@@ -9,13 +9,17 @@ import Modelo.Cadena;
 
 /**
  *
- * @author Lab03pc05
+ * @author Oriana
  */
 public class TestCadena {
+
     public static void main(String[] args) {
-        Cadena c1=new Cadena("Madarme");
-        Cadena c2=c1.getCopia();
+        Cadena c1 = new Cadena("Madarme");
+        Cadena c2 = c1.getCopia();
         System.out.println(c1.toString());
         System.out.println(c2.toString());
+        c1.añadir(c2);
+        System.out.println("" + c1.toString());
+
     }
 }

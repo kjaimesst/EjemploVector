@@ -7,7 +7,7 @@ package Modelo;
 
 /**
  *
- * @author Lab03pc05
+ * @author Oriana
  */
 public class Cadena {
 
@@ -46,13 +46,26 @@ public class Cadena {
 
     //Punto b
     public void añadir(Cadena s2) {
-        /**
-         * :)
-         */
+        if (s2 != null && s2.cadena != null) {
+            char nuevaCadena[] = new char[this.cadena.length + s2.cadena.length];
+
+            // Copiar caracteres de la cadena actual a la nueva cadena
+            for (int i = 0; i < this.cadena.length; i++) {
+                nuevaCadena[i] = this.cadena[i];
+            }
+
+            // Copiar caracteres de s2 a la nueva cadena
+            for (int i = 0; i < s2.cadena.length; i++) {
+                nuevaCadena[this.cadena.length + i] = s2.cadena[i];
+            }
+
+            // Actualizar la referencia de cadena para que apunte a la nueva cadena
+            this.cadena = nuevaCadena;
+        }
 
     }
 
-    //Punto d
+//Punto d
     public int getContarPalabra() {
         return 0;
     }
