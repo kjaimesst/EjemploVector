@@ -7,7 +7,7 @@ package Modelo;
 
 /**
  *
- * @author Oriana
+ * @author Ori
  */
 public class Cadena {
 
